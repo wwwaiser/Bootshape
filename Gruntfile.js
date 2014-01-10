@@ -85,7 +85,8 @@ module.exports = function (grunt) {
         var themes = fs.readdirSync(grunt.config('builddir') + '/static/themes')
 
         grunt.file.write(grunt.config('builddir') + '/static/api.json', JSON.stringify({
-            themes: themes
+            themes: themes,
+            thumbName: 'sumbnail.png'
         }));
 
         themes.forEach(function (t) {
