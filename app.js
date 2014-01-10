@@ -1,35 +1,12 @@
+express = require("express")
+app = express()
 
-/**
- * Module dependencies.
- */
+app.set('port', process.env.TPL_CDN_PORT || 8080)
 
-var express = require('express')
-  , routes = require('./routes')
-  , user = require('./routes/user')
-  , http = require('http')
-  , path = require('path');
+app.use(express.logger('tiny'))
+app.use(express.static(__dirname + "/static"))
+app.use(express.favicon())
 
-var app = express();
+app.listen(app.get('port'))
 
-// all environments
-app.set('port', process.env.PORT || 3000);
-app.set('views', __dirname + '/views');
-app.set('view engine', 'jade');
-app.use(express.favicon());
-app.use(express.logger('dev'));
-app.use(express.bodyParser());
-app.use(express.methodOverride());
-app.use(app.router);
-app.use(express.static(path.join(__dirname, 'public')));
-
-// development only
-if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
-}
-
-app.get('/', routes.index);
-app.get('/users', user.list);
-
-http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
-});
+console.log('Goto localhost:' + app.get('port'))
