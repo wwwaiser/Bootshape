@@ -1,3 +1,6 @@
+var path = require('path')
+var fs = require('fs')
+
 module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-recess');
     grunt.loadNpmTasks('grunt-contrib-concat');
@@ -21,7 +24,7 @@ module.exports = function (grunt) {
         },
         clean: {
             build: {
-                src: ['themes/*/build.less', '!global_theme/build.less']
+                src: ['static/themes/*/build.less', '!global_theme/build.less']
             }
         },
         concat: {
@@ -78,9 +81,17 @@ module.exports = function (grunt) {
         grunt.task.run(['recess:dist']);
     });
 
-    grunt.registerMultiTask('swatch', 'build a theme', function() {
-        var t = this.target;
-        grunt.task.run('build:'+t);
+    grunt.registerTask('swatch', 'build a theme', function() {
+        var themes = fs.readdirSync(grunt.config('builddir') + '/static/themes')
+
+        grunt.file.write(grunt.config('builddir') + '/static/api.json', JSON.stringify({
+            themes: themes
+        }));
+
+        themes.forEach(function (t) {
+            grunt.task.run('build:'+t);
+        });
+
     });
     
     grunt.registerTask('default', 'build a theme', function() {
