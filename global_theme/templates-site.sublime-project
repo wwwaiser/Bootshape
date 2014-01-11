@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/private/var/www/templates-site"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/private/var/www/football-betting-web-app"
+		}
+	]
+}
