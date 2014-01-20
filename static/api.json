@@ -1,1 +1,8 @@
-{"themes":["amelia","test_theme"],"thumbName":"sumbnail.png"}
+{
+	"themes":[
+		"amelia",
+		"test_theme"],
+	"templates": [],
+	"psd": [],
+	"snippets": []
+	}
