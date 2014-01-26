@@ -1,7 +1,7 @@
 express = require("express")
 app = express()
 
-app.set('port', process.env.PORT || 8080)
+app.set('port', process.env.BOOTSHAPE_SRC_PORT)
 
 app.use(express.logger('tiny'))
 app.use(express.static(__dirname + "/static"))

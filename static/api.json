@@ -1,8 +1,57 @@
 {
-	"themes":[
+	"themes": [
 		"amelia",
-		"test_theme"],
-	"templates": [],
-	"psd": [],
+		"test_theme"
+    ],
+	"templates": {
+        "facebook": {
+            "Mojito": {
+                "name": "Yacht Club",
+                "preview": "/templates/facebook/Mojito/view/preview.png",
+                "thumb": "/templates/facebook/Mojito/view/thumb.png"
+            }
+        },
+        "onepage": {
+            "YachtClub": {
+                "name": "Yacht Club",
+                "preview": "/templates/facebook/YachtClub/view/preview.png",
+                "thumb": "/templates/facebook/YachtClub/view/thumb.png"
+            },
+            "ZooPlanet": {
+                "name": "Zoo Planet",
+                "preview": "/templates/facebook/ZooPlanet/view/preview.png",
+                "thumb": "/templates/facebook/ZooPlanet/view/thumb.png"
+            }
+        }
+    },
+	"psd": [
+        {"Dropdowns": "Dropdowns"},
+        {"ButtonGroups": "Button groups"},
+        {"ButtonDropdowns": "Button dropdowns"},
+        {"InputGroups": "Input groups"},
+        {"Navs": "Navs"},
+        {"Navbar": "Navbar"},
+        {"Breadcrumbs": "Breadcrumbs"},
+        {"Pagination": "Pagination"},
+        {"Labels": "Labels"},
+        {"Badges": "Badges"},
+        {"Jumbotron": "Jumbotron"},
+        {"PageHeader": "PageHeader"},
+        {"Thumbnails": "Thumbnails"},
+        {"Alerts": "Alerts"},
+        {"ProgressBars": "Progress bars"},
+        {"MediaObject": "Media object"},
+        {"ListGroup": "List group"},
+        {"Panels": "Panels"},
+        {"Wells": "Wells"},
+        {"Modals": "Modals"},
+        {"Tooltips": "Tooltips"},
+        {"Popovers": "Popovers"},
+        {"Collapse": "Collapse"},
+        {"Carousel": "Carousel"},
+        {"Tables": "Tables"},
+        {"Forms": "Forms"},
+        {"Images": "Images"}
+    ],
 	"snippets": []
-	}
+}
