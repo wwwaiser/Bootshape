@@ -4,25 +4,40 @@
 		"test_theme"
     ],
 	"templates": {
-        "facebook": {
-            "Mojito": {
-                "name": "Yacht Club",
+        "Facebook Templates": [
+            {
+                "name": "Mojito",
                 "preview": "/templates/facebook/Mojito/view/preview.png",
-                "thumb": "/templates/facebook/Mojito/view/thumb.png"
+                "thumb": "/templates/facebook/Mojito/view/thumb.png",
+                "zip": "/templates/facebook/Mojito.zip",
+                "version": "3.0.3"
             }
-        },
-        "onepage": {
-            "YachtClub": {
+        ],
+        "Landing Templates": [
+            {
+                "name": "App Zone",
+                "preview": "/templates/landing/AppZone/view/preview.png",
+                "thumb": "/templates/landing/AppZone/view/thumb.png",
+                "zip": "/templates/landing/AppZone.zip",
+                "version": "3.0.3"
+            }
+        ],
+        "Onepage Tempaltes": [
+            {
                 "name": "Yacht Club",
-                "preview": "/templates/facebook/YachtClub/view/preview.png",
-                "thumb": "/templates/facebook/YachtClub/view/thumb.png"
+                "preview": "/templates/onepage/YachtClub/view/preview.png",
+                "thumb": "/templates/onepage/YachtClub/view/thumb.png",
+                "zip": "/templates/onepage/YachtClub.zip",
+                "version": "3.0.3"
             },
-            "ZooPlanet": {
+            {
                 "name": "Zoo Planet",
-                "preview": "/templates/facebook/ZooPlanet/view/preview.png",
-                "thumb": "/templates/facebook/ZooPlanet/view/thumb.png"
+                "preview": "/templates/onepage/ZooPlanet/view/preview.png",
+                "thumb": "/templates/onepage/ZooPlanet/view/thumb.png",
+                "zip": "/templates/onepage/ZooPlanet.zip",
+                "version": "3.0.3"
             }
-        }
+        ]
     },
 	"psd": [
         {"Dropdowns": "Dropdowns"},
