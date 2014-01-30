@@ -21,7 +21,7 @@ a {
     font-size: 30px;
     padding: 25px 15px;
 }
-.nav>li>a:hover {
+.nav>li>a:hover, .nav>li>a:focus {
     background-color: #B4DBB9;
     opacity: 0.8;
 }
