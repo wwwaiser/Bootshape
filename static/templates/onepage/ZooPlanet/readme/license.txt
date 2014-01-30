@@ -1,14 +1,17 @@
-Bootshape Rights:
+LICENSE
 
-All resources available for download on Bootshape, including but not limited to, PSD, Templates, Snippets, Themes, are royalty free for use in both personal and commercial projects.
+This website template is released under a Creative Commons Attribution 3.0 License
 
-Rights:
+License text may be found here:
+http://creativecommons.org/licenses/by-sa/3.0/
 
-You are permitted to use the resources for any number of personal and commercial projects. You may modify the resources according to your requirements and include them into works, such as websites, applications or other materials intended for sale. No attribution or link back to Bootshape.com site is required, however any credit will be much appreciated.
+We request you retain the notice in the template footer including the link to www.bootshape.com 
+This not only gives respect to the large amount of time given freely by the developers but also helps build interest, traffic and use of our free and paid designs. If you refuse to include link in footer then support may be affected.
 
-Prohibitions:
+You are allowed to use this design only if you agree to the following conditions:
+- You cannot remove copyright notice from this design in footer without our permission.
+- If you modify this design it still should contain copyright because it is based on our work.
+- You may copy, distribute, modify, etc. this template as long as links to our websites remain untouched.
+- You may not use our templates for racist, hate, porn or other social unfriendly websites.
 
-You do not have the rights to redistribute, resell, lease, license, sublicense or offer files downloaded from Bootshape to any third party as is or as a separate attachment from any of your work. If you wish to promote our resources on your site, you must link back to the resource page where users can find the download and not directly to the download file.
-If you have any questions about the License, feel free to Contact us. ( bootshape.com@gmail.com )
-
-Note: All featured resources are trademarks of their respective owners. Be sure to check out the proper use with the resource author before you do anything with it.}
+For support visit http://bootshape.com/contacts
