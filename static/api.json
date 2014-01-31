@@ -10,14 +10,16 @@
         ],
         "Partners": [
             {
-                "name": "MaleSalon",
+                "name": "Male Salon",
+                "slug": "male-salon",
                 "preview": "/templates/wix/MaleSalon/preview.jpg",
                 "thumb": "/templates/wix/MaleSalon/thumb.jpg",
                 "url": "http://www.wix.com/website-template/view/html/1300?utm_campaign=af_templateholder.com&experiment_id=Bootshape",
                 "partner": true
             },
             {
-                "name": "TourOperator",
+                "name": "Tour Operator",
+                "slug": "tour-operator",
                 "preview": "/templates/wix/TourOperator/preview.jpg",
                 "thumb": "/templates/wix/TourOperator/thumb.jpg",
                 "url": "http://www.wix.com/website-template/view/html/1329?utm_campaign=af_templateholder.com&experiment_id=Bootshape",
@@ -25,6 +27,7 @@
             },
             {
                 "name": "Photographer",
+                "slug": "photographer",
                 "preview": "/templates/wix/WeddingPhotographer/preview.jpg",
                 "thumb": "/templates/wix/WeddingPhotographer/thumb.jpg",
                 "url": "http://www.wix.com/website-template/view/html/1295?utm_campaign=af_templateholder.com&experiment_id=Bootshape",
@@ -38,7 +41,7 @@
                 "thumb": "/templates/onepage/ZooPlanet/view/thumb.jpg",
                 "zip": "/templates/onepage/ZooPlanet.zip",
                 "index": "/templates/onepage/ZooPlanet/html/index.html",
-                "slug": "zoo_planet",
+                "slug": "zoo-planet",
                 "version": "3.0.3",
                 "description": [
                     {
