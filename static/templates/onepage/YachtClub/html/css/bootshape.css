@@ -1,6 +1,53 @@
-h1 {
-	font-family: 'Courgette', cursive;
+body {
+    background-image:url('../img/bg.png');
+    background-repeat:repeat;
+    font-family: 'Belgrano', serif;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Belgrano', serif;
 }
 p {
-	font-family: 'Belgrano', serif;
+    margin: 0 0 20px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #37384d;
+}
+.navbar {
+    background-image:url('../img/bg.png');
+    background-repeat:repeat;
+}
+.navbar-nav>li>a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.navbar-brand {
+    font-size: 30px;
+    padding: 25px 15px;
+    font-family: 'Courgette', cursive;
+}
+.navbar-default .navbar-brand {
+    color: #37384d;
+}
+a:hover, a:focus {
+    color: #000;
+}
+.jumbotron {
+    background-color: transparent;
+    padding: 70px 0 0 0;
+}
+.footer {
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.event {
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 30px;
+}
+.event + .event {
+    padding-top: 30px;
+}
+.event .date {
+    margin-bottom: 7px;
+    color: #2a6496;
 }

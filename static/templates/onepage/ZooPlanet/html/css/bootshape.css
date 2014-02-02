@@ -3,10 +3,23 @@ body {
     background-repeat:repeat;
     font-family: 'Actor', sans-serif;
 }
-h1 {
-	font-family: 'Duru Sans', sans-serif;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Actor', serif;
 }
-a {
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    background-color: #B4DBB9;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+    background-color: #B4DBB9;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-color: #B4DBB9;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #777;
+}
+
+.navbar-default .navbar-nav>li>a {
     color: #000;
 }
 .navbar {
@@ -20,25 +33,14 @@ a {
 .navbar-brand {
     font-size: 30px;
     padding: 25px 15px;
+    font-family: 'Duru Sans', sans-serif;
 }
-.nav>li>a:hover, .nav>li>a:focus {
-    background-color: #B4DBB9;
-    opacity: 0.8;
-}
-.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
-    background-color: #B4DBB9;
-    opacity: 0.8;
-}
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
-    background-color: #B4DBB9;
-    opacity: 0.8;
-}
-a:hover, a:focus {
+.navbar-default .navbar-brand {
     color: #000;
 }
 .jumbotron {
     background-color: transparent;
-    padding: 48px 0;
+    padding: 70px 0 0 0;
 }
 .green {
     color: #5cb85c;
