@@ -154,33 +154,8 @@
         ]
     },
 	"psd": [
-        {"Dropdowns": "Dropdowns"},
-        {"ButtonGroups": "Button groups"},
-        {"ButtonDropdowns": "Button dropdowns"},
-        {"InputGroups": "Input groups"},
-        {"Navs": "Navs"},
-        {"Navbar": "Navbar"},
-        {"Breadcrumbs": "Breadcrumbs"},
-        {"Pagination": "Pagination"},
-        {"Labels": "Labels"},
-        {"Badges": "Badges"},
-        {"Jumbotron": "Jumbotron"},
-        {"PageHeader": "PageHeader"},
-        {"Thumbnails": "Thumbnails"},
-        {"Alerts": "Alerts"},
-        {"ProgressBars": "Progress bars"},
-        {"MediaObject": "Media object"},
-        {"ListGroup": "List group"},
-        {"Panels": "Panels"},
-        {"Wells": "Wells"},
-        {"Modals": "Modals"},
-        {"Tooltips": "Tooltips"},
-        {"Popovers": "Popovers"},
-        {"Collapse": "Collapse"},
-        {"Carousel": "Carousel"},
-        {"Tables": "Tables"},
-        {"Forms": "Forms"},
-        {"Images": "Images"}
+        {"Bootstrap3": "Bootstrap3"},
+        {"Bootstrap3Separately": "Bootstrap3 Separately"}
     ],
 	"snippets": []
 }
