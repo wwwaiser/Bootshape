@@ -1,3 +1,9 @@
+/*!
+ * Bootstrap v3.0.3 (http://getbootstrap.com)
+ * Copyright 2013 Twitter, Inc.
+ * Licensed under http://www.apache.org/licenses/LICENSE-2.0
+ */
+
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 
 article,
@@ -300,7 +306,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #898989;
+  color: #333333;
   background-color: #ffffff;
 }
 
@@ -394,7 +400,7 @@ h6,
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
-  color: #333333;
+  color: inherit;
 }
 
 h1 small,
@@ -2164,7 +2170,7 @@ textarea.input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #c9c9c9;
+  color: #737373;
 }
 
 @media (min-width: 768px) {
@@ -2272,7 +2278,7 @@ textarea.input-lg {
 
 .btn:hover,
 .btn:focus {
-  color: #549bdf;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -2296,9 +2302,9 @@ fieldset[disabled] .btn {
 }
 
 .btn-default {
-  color: #549bdf;
+  color: #333333;
   background-color: #ffffff;
-  border-color: #549bdf;
+  border-color: #cccccc;
 }
 
 .btn-default:hover,
@@ -2306,9 +2312,9 @@ fieldset[disabled] .btn {
 .btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
-  color: #549bdf;
+  color: #333333;
   background-color: #ebebeb;
-  border-color: #277dcf;
+  border-color: #adadad;
 }
 
 .btn-default:active,
@@ -2333,7 +2339,7 @@ fieldset[disabled] .btn-default:active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
   background-color: #ffffff;
-  border-color: #549bdf;
+  border-color: #cccccc;
 }
 
 .btn-default .badge {
@@ -5286,7 +5292,7 @@ a.thumbnail.active {
 
 .thumbnail .caption {
   padding: 9px;
-  color: #898989;
+  color: #333333;
 }
 
 .alert {

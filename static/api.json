@@ -49,6 +49,43 @@
         "Facebook Templates": [
         ],
         "Landing Templates": [
+        {
+            "name": "App Zone",
+            "preview": "/templates/landing/AppZone/view/preview.jpg",
+            "thumb": "/templates/landing/AppZone/view/thumb.jpg",
+            "zip": "/templates/landing/AppZone.zip",
+            "index": "/templates/landing/AppZone/html/index.html",
+            "slug": "app-zone",
+            "version": "3.0.3",
+            "meta": {
+                "title": "Free template App Zone",
+                "description": "",
+                "keywords": ""
+            },
+            "description": [
+                {
+                    "name": "PSD included",
+                    "items": []
+                },
+                {
+                    "name": "Features",
+                    "items": ["Clean, Crisp, Professional Design", "Crossbrowser Compatible", "Responsive Action – looks great on computer, tablets and smartphones.", "Easy to Customize", "Developer Friendly Code"]
+                },
+                {
+                    "name": "Plugins",
+                    "items": ["<a href='http://getbootstrap.com/javascript/#carousel'>Bootstrap Carousel</a>"]
+                },
+                {
+                    "name": "Credits",
+                    "items": [
+                        "jQuery - <a href='http://jquery.com'>jquery.com</a>",
+                        "Google Fonts - <a href='http://www.google.com/webfonts'>google.com/webfonts</a>",
+                        "Twitter Bootstrap - <a href='http://getbootstrap.com/'>getbootstrap.com</a>",
+                        "Images - <a href='http://subtlepatterns.com/'>subtlepatterns.com</a>" 
+                    ]
+                }
+            ]
+        }
         ],
         "Partners": [
             {
