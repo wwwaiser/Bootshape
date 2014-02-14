@@ -1,10 +1,3 @@
-.transform(@string){
-    -webkit-transform: @string;
-    -moz-transform:      @string;
-    -ms-transform:       @string;
-    -o-transform:        @string;
-}
-
 html, body {
     margin: 0;
     padding: 0;
@@ -46,23 +39,11 @@ html, body {
     margin: 40px 0;
     padding: 0 10%;
 }
-/* Push footer to bottom*/
-// .wrap {
-//     min-height: 100%;
-//     height: auto;
-//     margin: 0 auto -80px;
-//     padding: 0 0 80px;
-// }
-// footer {
-//     height: 80px;
-// }
-
 section {
-    padding: 40px 0;
+    padding: 20px 0;
     position: relative;
     overflow: hidden;
 }
-
 .promo {
     background: url('../img/header_bg.jpg') no-repeat;
     background-size: cover;
@@ -82,67 +63,32 @@ section {
         }
     }
 } 
-
 .thumbnail {
     border: none;
     .thumb-icon {
         font-size: 8em;
         color: #549bdf;
+        max-height: 160px;
     }
     div.thumb-caption {
         padding: 0 40px;
     }
 }
-
-.feature-arrows {
-    display: inline-block;
-    display: none;
-    position: absolute;
-    z-index: 1;
-    font-size: 41px;
-    color: #e7e7e7;
-    &.bottom {
-        bottom: -35px;
-        margin-left: -72px;
-    }
-    &.top {
-        top: -35px;
-        margin-left: -72px;
-    }
-    .arrow-wrap {
-        width: 70px;
-        height: 70px;
-        border-radius: 35px;
-        background: #fff;
-        float: left;
-        margin: 0 1px;
-        .arrow {
-            border: 1px solid #e7e7e7;
-            width: 60px;
-            height: 60px;
-            border-radius: 30px;
-            position: relative;
-            top: 5px;
-            left: 5px;
-        }
-    }
+.fa {
+    transition: -webkit-transform 0.2s ease;
 }
-
 .features {
-    &.last {
-        padding-bottom: 0;
-    }
     .feature-description {
         padding: 0 40px;
     }
     .feature-icon {
         position: relative;
-        padding: 0px 0 20px 100px;
+        padding: 0px 0 20px 0;
         .fa {
             position: absolute;
             font-size: 60px;
             top: 20px;
-            left: 0;
+            left: -80px;
         }
     }
     .feature-picture {
@@ -156,7 +102,6 @@ section {
         margin: 60px 0 30px 0;
     }
 }
-
 .footer-icons {
     & li > a {
         display: block;
@@ -183,123 +128,4 @@ section {
         background-image: url('../img/social_linkedin.png')
     }
 }
-
-
-
-.jcarousel-wrapper {
-    position: relative;
-    margin-bottom: 50px;
-}
-
-/** Carousel **/
-
-.jcarousel {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
-
-.jcarousel ul {
-    width: 20000em;
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.jcarousel li {
-    float: left;
-    border: 1px solid #fff;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.jcarousel img {
-    display: block;
-    max-width: 100%;
-    height: auto !important;
-}
-
-/** Carousel Controls **/
-
-.jcarousel-control-prev,
-.jcarousel-control-next {
-    position: absolute;
-    top: 50%;
-    margin-top: -15px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    background: #4E443C;
-    color: #fff;
-    text-decoration: none;
-    text-shadow: 0 0 1px #000;
-    font: 24px/27px Arial, sans-serif;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-    -webkit-box-shadow: 0 0 4px #F0EFE7;
-    -moz-box-shadow: 0 0 4px #F0EFE7;
-    box-shadow: 0 0 4px #F0EFE7;
-    &.left {
-        left: -30px;
-    }
-    &.right {
-        right: -30px;
-    }
-}
-
-.jcarousel-control-prev {
-    left: 15px;
-}
-
-.jcarousel-control-next {
-    right: 15px;
-}
-
-/** Carousel Pagination **/
-
-.jcarousel-pagination {
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    margin: 0;
-}
-
-.jcarousel-pagination a {
-    text-decoration: none;
-    display: inline-block;
-
-    font-size: 11px;
-    height: 10px;
-    width: 10px;
-    line-height: 10px;
-
-    background: #fff;
-    color: #4E443C;
-    border-radius: 10px;
-    text-indent: -9999px;
-
-    margin-right: 7px;
-
-
-    -webkit-box-shadow: 0 0 2px #4E443C;
-    -moz-box-shadow: 0 0 2px #4E443C;
-    box-shadow: 0 0 2px #4E443C;
-}
-
-.jcarousel-pagination a.active {
-    background: #549bdf;
-    color: #fff;
-    opacity: 1;
-
-    -webkit-box-shadow: 0 0 2px #F0EFE7;
-    -moz-box-shadow: 0 0 2px #F0EFE7;
-    box-shadow: 0 0 2px #F0EFE7;
-}
-
 
