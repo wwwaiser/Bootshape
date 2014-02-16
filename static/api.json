@@ -45,6 +45,20 @@
             }
         }
     ],
+    "snippets": [
+        {
+            "name": "Simple Login",
+            "csspath": "/snippets/SimpleLogin/html/snippet.css",
+            "jspath": "/snippets/SimpleLogin/html/snippet.js",
+            "htmlpath": "/snippets/SimpleLogin/html/snippet.html",
+            "preview": "/snippets/SimpleLogin/view/preview.jpg",
+            "thumb": "/snippets/SimpleLogin/view/thumb.jpg",
+            "zip": "/snippets/SimpleLogin.zip",
+            "index": "/snippets/SimpleLogin/html/index.html",
+            "slug": "simple-login",
+            "version": "3.0.3"
+        }
+    ],
 	"templates": {
         "Facebook Templates": [
         ],
@@ -195,6 +209,5 @@
 	"psd": [
         {"Bootstrap3": "Bootstrap3"},
         {"Bootstrap3Separately": "Bootstrap3 Separately"}
-    ],
-	"snippets": []
+    ]
 }
