@@ -57,6 +57,18 @@
             "index": "/snippets/SimpleLogin/html/index.html",
             "slug": "simple-login",
             "version": "3.0.3"
+        },
+        {
+            "name": "Wedding Login",
+            "csspath": "/snippets/WeddingLoginForm/html/snippet.css",
+            "jspath": "/snippets/WeddingLoginForm/html/snippet.js",
+            "htmlpath": "/snippets/WeddingLoginForm/html/snippet.html",
+            "preview": "/snippets/WeddingLoginForm/view/preview.jpg",
+            "thumb": "/snippets/WeddingLoginForm/view/thumb.jpg",
+            "zip": "/snippets/WeddingLoginForm.zip",
+            "index": "/snippets/WeddingLoginForm/html/index.html",
+            "slug": "wedding-login-form",
+            "version": "3.0.3"
         }
     ],
 	"templates": {

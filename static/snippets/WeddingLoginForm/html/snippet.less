@@ -1,0 +1,106 @@
+@import 'elements.less';
+@text-color: #aeaeae;
+html, body {
+    height: 100%;
+}
+
+.bootshape.login-form {
+    height: 100%;
+    background: url('./img/background.jpg');
+    background-size: cover;
+    font-family: 'Balthazar', serif;
+    h1 {
+        font-family: 'Stalemate', cursive;
+    }
+    a {
+        color: #fec000;
+    }
+    .login-popup-wrap {
+        position: relative;
+        top: 80px;
+        left: 60px;
+        color: @text-color;
+        min-width: 300px;
+        & > :first-child {
+            margin-bottom: 6px;
+        }
+    }
+    .login-popup {
+        .drop-shadow(0px, 0px, 6px, 0.2);
+        background: #fff;
+        border-radius: 3px;
+        padding: 20px 40px;
+    }
+    .title {
+        margin-bottom: 40px;
+        font-size: 48px;
+        color: #333333;
+    }
+    .text {
+        background: #f8f8f8;
+        border: none;
+        font-size: 16px;
+    }
+    .submit {
+        background: #fec000;
+        color: #fff;
+        font-size: 24px;
+        width: 100%;
+        padding: 0;
+    }
+    .divider {
+        height: 1px;
+        margin-top: 30px;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    .divider-label {
+        display: inline-block;
+        padding: 6px;
+        background: #fff;
+        position: relative;
+        top: -16px;
+    }
+    .footer-icons {
+        margin: 15px 0;
+        & li > a {
+            display: block;
+            border-radius: 55em;
+            background: @text-color;
+            width: 32px;
+            height: 32px;
+            padding: 4px 0;
+            font-size: 20px;
+            color: #fff;
+        }
+    }
+}
+
+// xs
+@media(max-width:767px) {
+    .bootshape.login-form {
+        .login-popup-wrap {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            padding: 50px 50px;
+        }
+    }
+    .login-popup {
+        padding: 20px 5px;
+    }
+}
+// sm
+// @media(min-width:768px){}
+// md
+// @media(min-width:992px){}
+// lg
+// @media(min-width:1200px){}
+
+// custom
+@media(max-width: 460px) {
+    .bootshape.login-form {
+        .login-popup-wrap {
+            padding: 50px 5px;
+        }
+    }
+}

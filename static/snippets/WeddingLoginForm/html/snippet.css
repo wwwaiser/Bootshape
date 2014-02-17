@@ -1,0 +1,92 @@
+html,
+body {
+  height: 100%;
+}
+.bootshape.login-form {
+  height: 100%;
+  background: url('./img/background.jpg');
+  background-size: cover;
+  font-family: 'Balthazar', serif;
+}
+.bootshape.login-form h1 {
+  font-family: 'Stalemate', cursive;
+}
+.bootshape.login-form a {
+  color: #fec000;
+}
+.bootshape.login-form .login-popup-wrap {
+  position: relative;
+  top: 80px;
+  left: 60px;
+  color: #aeaeae;
+  min-width: 300px;
+}
+.bootshape.login-form .login-popup-wrap > :first-child {
+  margin-bottom: 6px;
+}
+.bootshape.login-form .login-popup {
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border-radius: 3px;
+  padding: 20px 40px;
+}
+.bootshape.login-form .title {
+  margin-bottom: 40px;
+  font-size: 48px;
+  color: #333333;
+}
+.bootshape.login-form .text {
+  background: #f8f8f8;
+  border: none;
+  font-size: 16px;
+}
+.bootshape.login-form .submit {
+  background: #fec000;
+  color: #fff;
+  font-size: 24px;
+  width: 100%;
+  padding: 0;
+}
+.bootshape.login-form .divider {
+  height: 1px;
+  margin-top: 30px;
+  border-bottom: 1px solid #e2e2e2;
+}
+.bootshape.login-form .divider-label {
+  display: inline-block;
+  padding: 6px;
+  background: #fff;
+  position: relative;
+  top: -16px;
+}
+.bootshape.login-form .footer-icons {
+  margin: 15px 0;
+}
+.bootshape.login-form .footer-icons li > a {
+  display: block;
+  border-radius: 55em;
+  background: #aeaeae;
+  width: 32px;
+  height: 32px;
+  padding: 4px 0;
+  font-size: 20px;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .bootshape.login-form .login-popup-wrap {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 50px 50px;
+  }
+  .login-popup {
+    padding: 20px 5px;
+  }
+}
+@media (max-width: 460px) {
+  .bootshape.login-form .login-popup-wrap {
+    padding: 50px 5px;
+  }
+}
