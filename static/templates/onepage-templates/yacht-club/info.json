@@ -1,0 +1,37 @@
+{
+    "name": "Yacht Club",
+    "preview": "/templates/onepage/YachtClub/view/preview.jpg",
+    "thumb": "/templates/onepage/YachtClub/view/thumb.jpg",
+    "zip": "/templates/onepage/YachtClub.zip",
+    "index": "/templates/onepage/YachtClub/html/index.html",
+    "slug": "yacht-club",
+    "version": "3.0.3",
+    "meta": {
+        "title": "Free template Yacht Club",
+        "description": "Yacht Club is free template with 3 thumbs and nice carousel in jumbotron. News section in right sidebar. About content on the left body.",
+        "keywords": "yacht club, free template, 3 thumbs, html5 css3"
+    },
+    "description": [
+        {
+            "name": "PSD included",
+            "items": []
+        },
+        {
+            "name": "Features",
+            "items": ["Clean, Crisp, Professional Design", "Crossbrowser Compatible", "Responsive Action – looks great on computer, tablets and smartphones.", "Easy to Customize", "Developer Friendly Code"]
+        },
+        {
+            "name": "Plugins",
+            "items": ["<a href='http://getbootstrap.com/javascript/#carousel'>Bootstrap Carousel</a>"]
+        },
+        {
+            "name": "Credits",
+            "items": [
+                "jQuery - <a href='http://jquery.com'>jquery.com</a>",
+                "Google Fonts - <a href='http://www.google.com/webfonts'>google.com/webfonts</a>",
+                "Twitter Bootstrap - <a href='http://getbootstrap.com/'>getbootstrap.com</a>",
+                "Images - <a href='http://subtlepatterns.com/'>subtlepatterns.com</a>" 
+            ]
+        }
+    ]
+}
