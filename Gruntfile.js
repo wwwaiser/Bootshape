@@ -138,7 +138,8 @@ module.exports = function (grunt) {
                 axureInfo = _.extend(axureInfo, {
                     slug: axureDir,
                     thumb: '/prototyping/axure/' + axureDir + '/view/thumb.jpg',
-                    preview: '/prototyping/axure/' + axureDir + '/view/preview.jpg'
+                    preview: '/prototyping/axure/' + axureDir + '/view/preview.jpg',
+                    zip: '/prototyping/axure/' + axureDir + '.zip'
                 });
                 return axureInfo;
             });
@@ -173,7 +174,7 @@ module.exports = function (grunt) {
                     jspath: '/snippets/' + snippetDir + '/html/snippet.js',
                     htmlpath: '/snippets/' + snippetDir + '/html/snippet.html',
                     preview: '/snippets/' + snippetDir + '/view/preview.jpg',
-                    thumb: '/snippets/' + snippetDir + '/viewl/thumb.jpg',
+                    thumb: '/snippets/' + snippetDir + '/view/thumb.jpg',
                     zip: '/snippets/' + snippetDir + '.zip',
                     index: '/snippets/' + snippetDir + '/html/index.html'
                 });
@@ -216,7 +217,7 @@ module.exports = function (grunt) {
                         preview: '/templates/' + categoryDir + '/' + templateDir + '/view/preview.jpg',
                         zip: '/templates/' + categoryDir + '/' + templateDir + '.zip',
                         index: '/templates/' + categoryDir + '/' + templateDir + '/html/index.html',
-                        thumb: '/templates/' + categoryDir + '/' + templateDir + '/view/thumb.jpg'
+                        thumb: '/templates/' + categoryDir + '/' + templateDir + (templateInfo.partner? '' : '/view') + '/thumb.jpg'
                     });
 
                     templatesJSON.push(templateInfo);
