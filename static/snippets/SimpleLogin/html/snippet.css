@@ -1,9 +1,3 @@
-/*---------------------------------------------------
-    LESS Elements 0.9
-  ---------------------------------------------------
-    A set of useful LESS mixins
-    More info at: http://lesselements.com
-  ---------------------------------------------------*/
 .bootshape {
   font-family: 'Alef', sans-serif;
   background-color: #FFF;
@@ -36,9 +30,9 @@
 .bootshape .form-control:focus {
   border-color: #e4e0e0;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.015) 0 0 8px rgba(228, 224, 224, 0.6) 2px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.015) 0 0 8px rgba(228, 224, 224, 0.6) 2px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.015) 0 0 8px rgba(228, 224, 224, 0.6) 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.015), 0 0 8px rgba(228, 224, 224, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.015), 0 0 8px rgba(228, 224, 224, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.015), 0 0 8px rgba(228, 224, 224, 0.6);
 }
 .bootshape .btn-lg {
   font-size: 22px;

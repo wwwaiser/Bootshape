@@ -4,6 +4,7 @@ app = express()
 app.set('port', process.env.BOOTSHAPE_STATIC_PORT)
 
 app.use(express.logger('tiny'))
+
 app.use(express.static(__dirname + "/static"))
 app.use(express.favicon())
 

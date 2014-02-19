@@ -1,0 +1,4 @@
+CREDITS
+
+Background: http://subtlepatterns.com/ (extra_clean_paper)
+Fonts: http://www.google.com/fonts (Actor, Duru_Sans)

@@ -1,0 +1,11 @@
+{
+  "name": "ZooPlanet",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "grunt-recess": "~0.3.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
