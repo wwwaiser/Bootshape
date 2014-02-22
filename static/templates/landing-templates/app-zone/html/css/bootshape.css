@@ -40,6 +40,10 @@ body {
   margin: 40px 0;
   padding: 0 10%;
 }
+.push-bottom {
+  position: absolute;
+  bottom: 0;
+}
 section {
   padding: 20px 0;
   position: relative;
@@ -63,6 +67,9 @@ section {
 .promo .brand-holder span {
   text-transform: uppercase;
   font-size: 12px;
+}
+.promo .btn {
+  border: 2px solid #fffc00;
 }
 .thumbnail {
   border: none;
