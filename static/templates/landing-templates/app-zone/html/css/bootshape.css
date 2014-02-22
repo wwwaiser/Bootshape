@@ -132,3 +132,12 @@ section {
 .footer-icons .lkd {
   background-image: url('../img/social_linkedin.png');
 }
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  color: #fff;
+  background-color: #418ce1;
+  border-color: #277dcf;
+}
