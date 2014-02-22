@@ -176,6 +176,9 @@ module.exports = function (grunt) {
                     preview: '/snippets/' + snippetDir + '/view/preview.jpg',
                     thumb: '/snippets/' + snippetDir + '/view/thumb.jpg',
                     zip: '/snippets/' + snippetDir + '.zip',
+                    html: fs.readFileSync('./static/snippets/' + snippetDir + '/html/snippet.html').toString(),
+                    css: fs.readFileSync('./static/snippets/' + snippetDir + '/html/snippet.css').toString(),
+                    js: fs.readFileSync('./static/snippets/' + snippetDir + '/html/snippet.js').toString(),
                     index: '/snippets/' + snippetDir + '/html/index.html'
                 });
 
