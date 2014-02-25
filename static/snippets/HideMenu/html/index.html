@@ -22,14 +22,16 @@ Contact: http://www.bootshape.com/contact/
   <head>
     <title>Hide Menu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    
-    <!--Google Fonts-->
-    <link href='http://fonts.googleapis.com/css?family=Montserrat+Alternates|Happy+Monkey&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
     
     <!--Bootshape-->
-    <link href="css/bootshape.css" rel="stylesheet">
+    <link href="snippet.css" rel="stylesheet">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,14 +40,43 @@ Contact: http://www.bootshape.com/contact/
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <h1>Hide Menu</h1>
-	<p>
-    	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    </p>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+  <body class="bootshape-menu-push">
+    <!--Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat+Alternates|Happy+Monkey&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <nav class="bootshape-menu bootshape-menu-vertical bootshape-menu-left" id="bootshape-menu-s1">
+      <div class="item">
+        <span class="glyphicon glyphicon-home"></span>
+        <a href="#">Home</a>
+      </div>
+      <div class="item">
+        <span class="glyphicon glyphicon-stats"></span>
+        <a href="#">Statistics</a>
+      </div>
+      <div class="item">
+        <span class="glyphicon glyphicon-map-marker"></span>
+        <a href="#">Location</a>
+      </div>
+      <div class="item">
+        <span class="glyphicon glyphicon-envelope"></span>
+        <a href="#">Messages</a>
+      </div>
+      <div class="item">
+        <span class="glyphicon glyphicon-usd"></span>
+        <a href="#">Payments</a>
+      </div>
+      <div class="item">
+        <span class="glyphicon glyphicon-user"></span>
+        <a href="#">Portfolio</a>
+      </div>
+    </nav>
+
+    <div class="content">
+      <span class="show-menu pull-left">
+        <span class="glyphicon glyphicon-th-list" id="showLeftPush"></span>
+      </span>
+    </div>
+
+    <script type="text/javascript" src="snippet.js"></script>
   </body>
 </html>
