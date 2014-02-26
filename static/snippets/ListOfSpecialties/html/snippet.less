@@ -1,9 +1,17 @@
-.bootshape {
-    width: 100%;
-    height: 100%;
+html, body {
+    min-width: 100%;
+    min-height: 100%;
     background: url('img/fabric_of_squares_gray_@2X.png');
     background-repeat: repeat;
-    padding-top: 80px;
+}
+.inline-block {
+    display: inline-block;
+}
+.relative {
+    position: relative;
+}
+.bootshape {
+    padding-top: 40px;
     .main {
         background: #fff;
         .head{
@@ -29,24 +37,39 @@
         }
         .navigation {
             background: #d74900;
-            color: #fff;
             table {
                 margin: 0;
             }
             td {
                 border-top: none !important;
-                position: relative;
                 white-space: nowrap;
-                &.current {
-                    &:after {
-                        content: "";
-                        position: absolute;
-                        top: 100%;
-                        width: 4px;
-                        border: 4px solid transparent;
-                        border-top: 4px solid #d74900;
-                        left: 50%;
-                        margin-left: -2px;
+                padding: 0;
+                a {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    padding: 8px;
+                    color: #fff;
+                    text-decoration: none;
+                    &:hover {
+                        background: #e1753e;
+                    }
+                    &.current {
+                        &:hover {
+                            &:after {
+                                border-top-color: #e17239;
+                            }
+                        }
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            top: 100%;
+                            width: 4px;
+                            border: 4px solid transparent;
+                            border-top: 4px solid #d74900;
+                            left: 50%;
+                            margin-left: -2px;
+                        }
                     }
                 }
             }
@@ -54,10 +77,79 @@
                 border-left: 1px solid #e17239;
             }
         }
+        .search-form {
+            margin: 15px 30px;
+            input {
+                padding-left: 35px;
+                border-radius: 20px;
+            }
+            span {
+                left: 0;
+                top: 0;
+            }
+        }
+        .pagination {
+            margin: 0 0 5px 0;
+            li {
+                font-size: 16px;
+                &.active {
+                    a {
+                        border: 1px solid #d74900;
+                        background: none;
+                        color: #d74900;
+                    }
+                }
+                &:hover {
+                    a {
+                        border: 1px solid #d74900;
+                        background: none;
+                        color: #d74900;
+                    }
+                }
+                a {
+                    margin: 0 2px;
+                    border-radius: 55em;
+                    border: none;
+                    color: #8a8a8a;
+                    border: 1px solid transparent;
+                }
+            }
+        }
         .list {
             img {
                 height: 60px;
                 border-radius: 55em;
+                position: relative;
+                top: -20px;
+            }
+            td {
+                padding: 20px 30px;
+                border-top: none !important;
+                vertical-align: middle;
+                position: relative;
+                cursor: pointer;
+                .user-info {
+                    padding-left: 15px;
+                    display: inline-block;
+                    h2 {
+                        margin: 0 0 5px 0;
+                    }
+                    .icons {
+                        color: #8a8a8a;
+                        span {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                .triangle {
+                    background-image: url('img/triangle.png');
+                    background-size: cover;
+                    width: 20px;
+                    height: 33px;
+                    position: absolute;
+                    right: 0px;
+                    top: 23px;
+                }
             }
         }
     }
