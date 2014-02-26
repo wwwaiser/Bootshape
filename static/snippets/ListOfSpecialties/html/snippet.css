@@ -4,12 +4,19 @@ body {
   min-height: 100%;
   background: url('img/fabric_of_squares_gray_@2X.png');
   background-repeat: repeat;
+  font-family: "Carrois Gothic";
 }
 .inline-block {
   display: inline-block;
 }
 .relative {
   position: relative;
+}
+.footer {
+  padding: 10px;
+}
+.footer a {
+  color: #d74900;
 }
 .bootshape {
   padding-top: 40px;
@@ -34,9 +41,13 @@ body {
   font-size: 20px;
   line-height: 60px;
   color: #9e9489;
+  font-family: 'Alegreya Sans';
 }
 .bootshape .main .head .icons span {
   cursor: pointer;
+}
+.bootshape .main .head .icons span:hover {
+  color: #e17239;
 }
 .bootshape .main .navigation {
   background: #d74900;
@@ -56,6 +67,7 @@ body {
   padding: 8px;
   color: #fff;
   text-decoration: none;
+  font-size: 16px;
 }
 .bootshape .main .navigation td a:hover {
   background: #e1753e;
@@ -78,6 +90,7 @@ body {
 }
 .bootshape .main .search-form {
   margin: 15px 30px;
+  font-family: 'Alegreya Sans';
 }
 .bootshape .main .search-form input {
   padding-left: 35px;
@@ -88,6 +101,7 @@ body {
   top: 0;
 }
 .bootshape .main .pagination {
+  font-family: 'Alegreya Sans';
   margin: 0 0 5px 0;
 }
 .bootshape .main .pagination li {
@@ -104,6 +118,7 @@ body {
   color: #d74900;
 }
 .bootshape .main .pagination li a {
+  padding: 4px 11px;
   margin: 0 2px;
   border-radius: 55em;
   border: none;

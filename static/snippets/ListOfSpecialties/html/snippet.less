@@ -1,14 +1,22 @@
+@red: #d74900;
 html, body {
     min-width: 100%;
     min-height: 100%;
     background: url('img/fabric_of_squares_gray_@2X.png');
     background-repeat: repeat;
+    font-family: "Carrois Gothic";
 }
 .inline-block {
     display: inline-block;
 }
 .relative {
     position: relative;
+}
+.footer {
+    padding: 10px;
+    a {
+        color: @red;
+    }
 }
 .bootshape {
     padding-top: 40px;
@@ -30,13 +38,17 @@ html, body {
                 font-size: 20px;
                 line-height: 60px;
                 color: #9e9489;
+                font-family: 'Alegreya Sans';
                 span {
                     cursor: pointer;
+                    &:hover {
+                        color: #e17239;
+                    }
                 }
             }
         }
         .navigation {
-            background: #d74900;
+            background: @red;
             table {
                 margin: 0;
             }
@@ -51,6 +63,7 @@ html, body {
                     padding: 8px;
                     color: #fff;
                     text-decoration: none;
+                    font-size: 16px;
                     &:hover {
                         background: #e1753e;
                     }
@@ -66,7 +79,7 @@ html, body {
                             top: 100%;
                             width: 4px;
                             border: 4px solid transparent;
-                            border-top: 4px solid #d74900;
+                            border-top: 4px solid @red;
                             left: 50%;
                             margin-left: -2px;
                         }
@@ -79,6 +92,7 @@ html, body {
         }
         .search-form {
             margin: 15px 30px;
+            font-family: 'Alegreya Sans';
             input {
                 padding-left: 35px;
                 border-radius: 20px;
@@ -89,24 +103,26 @@ html, body {
             }
         }
         .pagination {
+            font-family: 'Alegreya Sans';
             margin: 0 0 5px 0;
             li {
                 font-size: 16px;
                 &.active {
                     a {
-                        border: 1px solid #d74900;
+                        border: 1px solid @red;
                         background: none;
-                        color: #d74900;
+                        color: @red;
                     }
                 }
                 &:hover {
                     a {
-                        border: 1px solid #d74900;
+                        border: 1px solid @red;
                         background: none;
-                        color: #d74900;
+                        color: @red;
                     }
                 }
                 a {
+                    padding: 4px 11px;
                     margin: 0 2px;
                     border-radius: 55em;
                     border: none;
