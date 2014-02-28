@@ -51,6 +51,8 @@ body {
 }
 .bootshape .main .navigation {
   background: #d74900;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 .bootshape .main .navigation table {
   margin: 0;
