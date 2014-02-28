@@ -13,29 +13,6 @@ module.exports = function (grunt) {
     grunt.initConfig({
         root: require('path').normalize(__dirname),
         pkg: grunt.file.readJSON('package.json'),
-        builddir: '.',
-        meta: {
-            banner: '/**\n' +
-                        ' * <%= pkg.description %>\n' +
-                        ' * @version v<%= pkg.version %> - ' +
-                        '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-                        ' * @link <%= pkg.homepage %>\n' +
-                        ' * @license <%= pkg.license %>' + ' */'
-        },
-        swatch: {
-            amelia:{}, test_theme: {}
-        },
-        clean: {
-            build: {
-                src: ['static/themes/*/build.less', '!global_theme/build.less']
-            }
-        },
-        concat: {
-            dist: {
-                src: [],
-                dest: ''
-            }
-        },
         recess: {
             dist: {
                 options: {

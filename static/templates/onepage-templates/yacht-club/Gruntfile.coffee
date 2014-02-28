@@ -1,4 +1,5 @@
 module.exports = (grunt) ->
+    require('load-grunt-tasks')(grunt);  
     grunt.initConfig
         recess:
             bootstrap:
@@ -7,6 +8,14 @@ module.exports = (grunt) ->
                 files:
                     'html/css/bootstrap.css': ['bootstrap/less/bootstrap.custom.less']
 
+        imagemin:
+            dist:
+                files: [{
+                    expand: true
+                    cwd: './html/img'
+                    dest: './html/img'
+                    src: '{,*/}*.{png,jpg,jpeg}'
+                }]
         watch:
             bootstrap:
                 files: ['bootstrap/less/**/*.less']
@@ -14,12 +23,10 @@ module.exports = (grunt) ->
                 options:
                     spawn: false
 
-    grunt.loadNpmTasks 'grunt-recess'
-    grunt.loadNpmTasks 'grunt-contrib-watch'
 
     grunt.registerTask 'default', ['recess', 'watch']
 
-    grunt.registerTask 'build', ['recess:bootstrap', 'compress:html/css/bootstrap.css:html/css/bootstrap.min.css']
+    grunt.registerTask 'build', ['imagemin', 'recess:bootstrap', 'compress:html/css/bootstrap.css:html/css/bootstrap.min.css']
 
     grunt.registerTask 'compress', 'compress a generic css', (fileSrc, fileDst) ->
         files = {}
