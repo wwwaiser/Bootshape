@@ -1,0 +1,61 @@
+.bootshape .thumbnail {
+  color: #333333;
+  cursor: pointer;
+}
+.bootshape .thumbnail:hover {
+  border-color: #ffa800;
+  -webkit-box-shadow: 0 0 8px rgba(255, 168, 0, 0.4);
+  -moz-box-shadow: 0 0 8px rgba(255, 168, 0, 0.4);
+  box-shadow: 0 0 8px rgba(255, 168, 0, 0.4);
+}
+.bootshape .author {
+  position: relative;
+  top: -12px;
+  padding: 0 10px;
+}
+.bootshape .author img {
+  border-radius: 55em;
+  max-width: 49px;
+  border: 1px solid #fff;
+}
+.bootshape .author i {
+  margin-left: 5px;
+}
+.bootshape .title {
+  margin: 0;
+  text-transform: uppercase;
+  color: #5cb85c;
+}
+.bootshape .caption {
+  padding-top: 0;
+}
+.bootshape .location {
+  padding: 12px 0 5px 0;
+  color: #999;
+}
+.bootshape .location i {
+  font-size: 18px;
+}
+.bootshape .location .place {
+  margin-left: 8px;
+}
+.bootshape .footer .price {
+  width: 50%;
+  color: #ffa800;
+  position: relative;
+}
+.bootshape .footer .price .small {
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+}
+.bootshape .footer .price .large {
+  font-size: 28px;
+  line-height: 28px;
+  margin-left: 10px;
+}
+.bootshape .footer .btn {
+  background-color: #5cb85c;
+  padding-left: 20px;
+  padding-right: 20px;
+}
