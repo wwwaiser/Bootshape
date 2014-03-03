@@ -1,0 +1,19 @@
+{
+  "name": "bootshape-src",
+  "version": "0.0.0",
+  "homepage": "https://github.com/wice24/bootshape",
+  "authors": [
+    "sergey <wice24@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1"
+  }
+}
