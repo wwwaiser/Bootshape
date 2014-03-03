@@ -1,9 +1,5 @@
 {
     "name": "Yacht Club",
-    "preview": "/templates/onepage/YachtClub/view/preview.jpg",
-    "thumb": "/templates/onepage/YachtClub/view/thumb.jpg",
-    "zip": "/templates/onepage/YachtClub.zip",
-    "index": "/templates/onepage/YachtClub/html/index.html",
     "slug": "yacht-club",
     "version": "3.0.3",
     "meta": {

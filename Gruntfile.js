@@ -66,6 +66,7 @@ module.exports = function (grunt) {
             templates: getTemplatesJSON(),
             snippets: getSnippetsJSON(),
             axures: getAxureJSON(),
+            themes: getThemesJSON(),
 
             psd: [
                 {"Bootstrap3": "Bootstrap3"},
@@ -98,7 +99,7 @@ module.exports = function (grunt) {
                     thumb: '/themes/' + themeDir + '/view/thumb.jpg',
                     preview: '/themes/' + themeDir + '/view/preview.jpg',
                     zip: '/themes/' + themeDir + '.zip',
-                    index: '/themes/' + categoryDir + '/' + templateDir + '/html/index.html'
+                    index: '/themes/' + themeDir + '/' + themeDir + '/html/index.html'
                 });
                 return themeInfo;
             });
