@@ -1,6 +1,43 @@
+.wrapper {
+	width:810px;
+}
 h1 {
 	font-family: 'Lobster', cursive;
 }
-p {
+body {
 	font-family: 'Karla', sans-serif;
+}
+.cBackground {
+	background-color:rgba(13, 11, 12, 0.42);
+}
+.bodyContainer {
+	padding:0 40px;
+}
+footer {
+	background:#f0f0f0;
+	margin:30px 0 0 0;
+}
+footer p {
+	padding:30px; 
+}
+footer a {
+	color:#81bb00;
+}
+footer a:hover {
+	color:#81bb00;
+}
+.galleryDescritpion {
+	padding:30px 0 0 0;
+}
+h2 span {
+	color:#80ba00;
+}
+.galleryContainer, .aboutContainer {
+	padding:30px 0 0 0;
+}
+
+
+.carousel-caption {
+	left:10%;
+	right:10%;
 }
