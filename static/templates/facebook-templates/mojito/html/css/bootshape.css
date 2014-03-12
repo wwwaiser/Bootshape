@@ -1,17 +1,5 @@
-.wrapper {
-	width:810px;
-}
-h1 {
-	font-family: 'Lobster', cursive;
-}
 body {
 	font-family: 'Karla', sans-serif;
-}
-.cBackground {
-	background-color:rgba(13, 11, 12, 0.42);
-}
-.bodyContainer {
-	padding:0 40px;
 }
 footer {
 	background:#f0f0f0;
@@ -26,17 +14,47 @@ footer a {
 footer a:hover {
 	color:#81bb00;
 }
+.wrapper {
+	width:100%;
+	position: relative;
+}
+.logo {
+	font-family: 'Lobster', cursive;
+	font-size: 36px;
+	position: absolute;
+	color: #b8ff0c;
+	top: 20px;
+	left: 20px;
+}
+.like {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background: #b8ff0c;	
+	width: 70px;
+}
+.like:hover {
+	background: #96cf0c;
+}
+.caption-layout {
+	background-color:rgba(13, 11, 12, 0.42);
+}
+.body-wrap {
+	padding:0 40px;
+}
 .galleryDescritpion {
 	padding:30px 0 0 0;
 }
-h2 span {
+.gallery h2 span {
 	color:#80ba00;
 }
-.galleryContainer, .aboutContainer {
+.gallery, .about {
 	padding:30px 0 0 0;
 }
 
-
+.gallery img {
+	margin: 10px 0;	
+}
 .carousel-caption {
 	left:10%;
 	right:10%;
