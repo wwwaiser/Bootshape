@@ -3,7 +3,7 @@ var fs = require('fs');
 var _ = require('underscore');
 
 module.exports = function (grunt) {
-    grunt.loadNpmTasks('grunt-recess');
+    grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
@@ -13,7 +13,22 @@ module.exports = function (grunt) {
     grunt.initConfig({
         root: require('path').normalize(__dirname),
         pkg: grunt.file.readJSON('package.json'),
-        recess: {
+        concat: {
+          options: {
+            banner: '',
+            stripBanners: false
+          },
+          dist: {
+            src: [],
+            dest: ''
+          }
+        },
+        clean: {
+          build: {
+            src: ['static/themes/*/build.less', '!static/themes/global/build.less']
+          }
+        },
+        less: {
             dist: {
                 options: {
                     compile: true,
@@ -24,12 +39,34 @@ module.exports = function (grunt) {
         }
     });
 
+    grunt.registerTask('theme', 'build theme', function(theme) {
+        var concatSrc;
+        var concatDest;
+        var lessDest;
+        var lessSrc;
+        var files = {};
+        var dist = {};
+
+        concatSrc = 'static/themes/global/build.less';
+        concatDest = 'static/themes/' + theme + '/build.less';
+        lessSrc = [ 'static/themes/' + theme + '/build.less' ];
+        lessDest = 'static/themes/' + theme + '/bootstrap.css';
+
+        dist = {src: concatSrc, dest: concatDest};
+        grunt.config('concat.dist', dist);
+        files = {}; files[lessDest] = lessSrc;
+        grunt.config('less.dist.files', files);
+        grunt.task.run(['concat', 'less:dist', 'clean']);
+
+    });
+
     grunt.registerTask('api', 'build api', function() {
         json = {
             categories: getCategoriesJSON(),
             templates: getTemplatesJSON(),
             snippets: getSnippetsJSON(),
             axures: getAxureJSON(),
+            themes: getThemesJSON(),
 
             psd: [
                 {"Bootstrap3": "Bootstrap3"},
@@ -40,6 +77,34 @@ module.exports = function (grunt) {
         fs.writeFileSync(grunt.config('root') + '/static/api.json', JSON.stringify(json));
 
         console.log("====== FINISH ======");
+
+        function getThemesJSON () {
+            themesPath = grunt.config('root') + '/static/themes'
+
+            themesElements = fs.readdirSync(themesPath);
+
+            themesElements = themesElements.filter(function(themeDir) {
+                return fs.lstatSync(themesPath + '/' + themeDir).isDirectory() && (fs.existsSync(themesPath + '/' + themeDir + '/info.json'));
+            });
+
+            themesElements = themesElements.map(function(themeDir) {
+                themeInfo = fs.readFileSync(themesPath + '/' + themeDir + '/info.json');
+                try {
+                    themeInfo = JSON.parse(themeInfo)
+                } catch (e) {
+                    throw new Error('can not parse theme ' + themeDir + ' json.info');
+                }
+                themeInfo = _.extend(themeInfo, {
+                    slug: themeDir,
+                    thumb: '/themes/' + themeDir + '/view/thumb.jpg',
+                    preview: '/themes/' + themeDir + '/view/preview.jpg',
+                    zip: '/themes/' + themeDir + '.zip',
+                    index: '/themes/' + themeDir + '/' + themeDir + '/html/index.html'
+                });
+                return themeInfo;
+            });
+            return themesElements;
+        }
 
         function getAxureJSON() {
             axurePath = grunt.config('root') + '/static/prototyping/axure'

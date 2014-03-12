@@ -1,9 +1,5 @@
 {
     "name": "Zoo Planet",
-    "preview": "/templates/onepage/ZooPlanet/view/preview.jpg",
-    "thumb": "/templates/onepage/ZooPlanet/view/thumb.jpg",
-    "zip": "/templates/onepage/ZooPlanet.zip",
-    "index": "/templates/onepage/ZooPlanet/html/index.html",
     "slug": "zoo-planet",
     "version": "3.0.3",
     "meta": {
