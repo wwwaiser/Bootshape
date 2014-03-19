@@ -98,8 +98,9 @@ module.exports = function (grunt) {
                     slug: themeDir,
                     thumb: '/themes/' + themeDir + '/view/thumb.jpg',
                     preview: '/themes/' + themeDir + '/view/preview.jpg',
-                    zip: '/themes/' + themeDir + '.zip',
-                    index: '/themes/' + themeDir + '/' + themeDir + '/html/index.html'
+                    css: '/themes/' + themeDir + '/bootstrap.css',
+                    variables: '/themes/' + themeDir + '/variables.less',
+                    index: '/themes/' + themeDir + '/index.html'
                 });
                 return themeInfo;
             });
